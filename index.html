@@ -10,15 +10,24 @@
   <title>Blog preview card</title>
 </head>
 <body>
+  <main>
+    <article class="blog-card" aria-labelledby="article-title">
+      <img class="blog-card__illustration" src="./images/illustration-article.svg" alt="" width="336" height="201">
 
-  Learning
+      <div class="blog-card__content">
+        <p class="blog-card__category text-preset-3-bold">Learning</p>
+        <p class="blog-card__date text-preset-3">Published <time datetime="2023-12-21">21 Dec 2023</time></p>
+        <h1 class="text-preset-1" id="article-title">
+          <a class="blog-card__title-link" href="#article-title">HTML &amp; CSS foundations</a>
+        </h1>
+        <p class="blog-card__description text-preset-2">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+      <footer class="blog-card__author">
+        <img src="./images/image-avatar.webp" alt="" width="32" height="32">
+        <p class="text-preset-3-bold">Greg Hooper</p>
+      </footer>
+    </article>
+  </main>
 </body>
 </html>
