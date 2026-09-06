@@ -19,7 +19,7 @@ The challenge is to build a responsive blog preview card matching the supplied d
 
 ### Screenshot
 
-![Supplied design preview for the Blog preview card challenge](./images/preview.jpg)
+![Desktop screenshot of the Blog preview card solution](./images/screenshot-desktop.png)
 
 ### Links
 
