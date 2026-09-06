@@ -1,0 +1,63 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Font */
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Design tokens */
+:root {
+  --color-yellow: #f4d04e;
+  --color-gray-950: #111111;
+  --color-gray-500: #6b6b6b;
+  --color-white: #ffffff;
+
+  --font-family-figtree: "Figtree", sans-serif;
+  --font-size-text-preset-1: 1.5rem;
+  --font-size-text-preset-2: 1rem;
+  --font-size-text-preset-3: 0.875rem;
+
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-300: 1.5rem;
+}
+
+/* Typography */
+.text-preset-1,
+.text-preset-2,
+.text-preset-3,
+.text-preset-3-bold {
+  font-family: var(--font-family-figtree);
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-1 {
+  font-size: var(--font-size-text-preset-1);
+  font-weight: 800;
+}
+
+.text-preset-2 {
+  font-size: var(--font-size-text-preset-2);
+  font-weight: 500;
+}
+
+.text-preset-3 {
+  font-size: var(--font-size-text-preset-3);
+  font-weight: 500;
+}
+
+.text-preset-3-bold {
+  font-size: var(--font-size-text-preset-3);
+  font-weight: 800;
+}
