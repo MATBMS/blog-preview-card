@@ -95,6 +95,22 @@ main {
   overflow-wrap: anywhere;
 }
 
+@keyframes card-shadow-entrance {
+  from {
+    box-shadow: 0 0 0 #000;
+  }
+
+  to {
+    box-shadow: 8px 8px 0 #000;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blog-card {
+    animation: card-shadow-entrance 600ms ease-out;
+  }
+}
+
 .blog-card__illustration {
   display: block;
   width: 100%;

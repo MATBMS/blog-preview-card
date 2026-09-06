@@ -42,9 +42,7 @@ Planned technologies and workflow:
 
 ### Extra feature
 
-As a...  
-I need to...  
-So that I can...
+As a visitor, I want the card's shadow to slide out from behind the card when the page appears, so that the card has a subtle entrance effect.
 
 ### AI Collaboration
 
