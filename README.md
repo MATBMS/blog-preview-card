@@ -30,15 +30,18 @@ The challenge is to build a responsive blog preview card matching the supplied d
 
 ### Built with
 
-Planned technologies and workflow:
-
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- Flexbox for the card layout and author row
+- CSS Grid for centering the card on the page
+- Mobile-first CSS with a responsive media query
+- CSS keyframe animation
 
 ### What I learned
+
+I learned how to create a small entrance animation using only CSS. The card's shadow slides from directly behind the card to its final position while the card stays still. I used `@keyframes` to define the start and end states, a duration of `600ms`, and `ease-out` to make the movement slow down gently at the end.
+
+I also learned how to respect a visitor's reduced-motion preference with `prefers-reduced-motion`. When reduced motion is requested, the final shadow appears immediately without animation.
 
 ### Extra feature
 
@@ -47,4 +50,3 @@ As a visitor, I want the card's shadow to slide out from behind the card when th
 ### AI Collaboration
 
 This project follows an AI-driven development framework with Codex. I guide the process through prompts, requirements, and feedback, while Codex handles implementation from start to finish and explains the work so I can learn from it.
-
