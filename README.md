@@ -30,7 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
+#### Preview Screenshot
+
 ![Preview Screenshot](./docs/preview.jpg)
+
+#### Desktop Screenshot
+
+![Desktop Screenshot](./docs/desktop-screenshot.png)
 
 ### Links
 
