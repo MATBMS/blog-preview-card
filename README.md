@@ -6,7 +6,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Extra Features](#extra-features)
+  - [Extra Feature](#extra-feature)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -22,11 +22,11 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Extra Features
+### Extra Feature
 
-**As a**<br>
-**I need to**<br>
-**So that I**
+**As a** User<br>
+**I need to** have an animation on the card hover<br>
+**So that it** improve my user experience
 
 ### Screenshot
 
@@ -37,6 +37,10 @@ Users should be able to:
 #### Desktop Screenshot
 
 ![Desktop Screenshot](./docs/desktop-screenshot.png)
+
+#### Desktop On Hover Screenshot
+
+![Desktop Screenshot](./docs/desktop-on-hover-screenshot.png)
 
 ### Links
 
@@ -50,10 +54,19 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
+
+#### Change body background color on hover
+
+To change the background of the `<body>` when hovering over an article using **onlu CSS**, you can use the `:has()` pseudo-class.
+
+```css
+body:has(.card:hover) {
+  background-color: var(--color-black);
+}
+```
 
 ### AI Collaboration
 

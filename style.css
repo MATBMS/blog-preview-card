@@ -58,6 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s ease;
 }
 
 /* body on desktop (1440px and up) */
@@ -80,6 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  transition: box-shadow 1s ease;
 }
 
 /* card on desktop (1440px and up) */
@@ -165,4 +167,16 @@ body {
 .card-author-name {
   font-size: 14px;
   font-weight: 700;
+}
+
+/* on hover */
+
+.card:hover {
+  border: 1px solid var(--color-yellow);
+  box-shadow: 24px 24px 0px 0px var(--color-yellow);
+}
+
+/* Change the body background when the card inside it is hovered */
+body:has(.card:hover) {
+  background-color: var(--color-black);
 }
