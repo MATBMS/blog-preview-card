@@ -24,9 +24,23 @@ Users should be able to:
 
 ### Extra feature
 
+**As a** visitor using a mouse on desktop,<br>
+**I want to** see the colors change when I hover the card,<br>
+**so that** I get visual feedback that I am pointing at it.
+
 ### Screenshot
 
+#### Preview
+
 ![Design preview for the Blog preview card coding challenge](./images/preview.jpg)
+
+#### Desktop
+
+![Desktop screenshot of the blog preview card](./images/desktop-screenshot.png)
+
+#### Desktop on hover
+
+![Desktop screenshot of the blog preview card on hover, with a black background and a yellow border and shadow](./images/desktop-on-hover-desktop.png)
 
 ### Links
 
@@ -51,6 +65,18 @@ Decorative images (like the abstract card illustration) should have an empty `al
 
 ```html
 <img class="card-image" src="./images/illustration-article.svg" alt="">
+```
+
+#### Changing the page background when hovering the card
+
+CSS selectors can only style an element or its children, so hovering the card cannot normally change the `body`. The `:has()` selector solves this: `body:has(.card:hover)` means "the body that contains a hovered card". I wrapped it in `@media (hover: hover)` so it only runs on devices with a mouse, not on touch screens.
+
+```css
+@media (hover: hover) {
+  body:has(.card:hover) {
+    background-color: black;
+  }
+}
 ```
 
 ### AI Collaboration
