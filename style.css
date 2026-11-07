@@ -47,3 +47,117 @@
   --spacing-150: 0.75rem; /* 12px */
   --spacing-200: 1.5rem; /* 24px */
 }
+
+/* ========== BASE ========== */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-200);
+  background-color: var(--color-yellow);
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-gray-950);
+}
+
+/* ========== CARD ========== */
+
+.card {
+  width: 100%;
+  max-width: 20.4375rem; /* 327px */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  padding: var(--spacing-200);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 1.25rem; /* 20px */
+  box-shadow: 0.5rem 0.5rem 0 black; /* 8px */
+}
+
+.card-image {
+  width: 100%;
+  height: 12.5rem; /* 200px */
+  object-fit: cover;
+  background-color: var(--color-yellow);
+  border-radius: 0.625rem; /* 10px */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-150);
+}
+
+.card-category {
+  padding: var(--spacing-50) var(--spacing-150);
+  background-color: var(--color-yellow);
+  border-radius: var(--spacing-50);
+  font-size: 0.75rem; /* 12px */
+  font-weight: 800;
+}
+
+.card-date {
+  font-size: 0.75rem; /* 12px */
+}
+
+.card-title {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 800;
+}
+
+.card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: var(--color-yellow);
+}
+
+.card-description {
+  font-size: var(--font-size-preset-3);
+  color: var(--color-gray-500);
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.card-avatar {
+  width: 2rem; /* 32px */
+  height: 2rem; /* 32px */
+  border-radius: 50%;
+}
+
+.card-author-name {
+  font-size: var(--font-size-preset-3);
+  font-weight: 800;
+}
+
+/* ========== DESKTOP ========== */
+
+@media (min-width: 48rem) { /* 768px */
+  .card {
+    max-width: 24rem; /* 384px */
+  }
+
+  .card-category,
+  .card-date {
+    font-size: var(--font-size-preset-3);
+  }
+
+  .card-title {
+    font-size: var(--font-size-preset-1);
+  }
+
+  .card-description {
+    font-size: var(--font-size-preset-2);
+  }
+}

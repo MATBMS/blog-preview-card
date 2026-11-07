@@ -45,6 +45,14 @@ Users should be able to:
 
 ### What I learned
 
+#### Alt text for decorative images
+
+Decorative images (like the abstract card illustration) should have an empty `alt` attribute: `alt=""`. It tells screen readers to skip the image, so users don't hear a long description that adds nothing. This is different from having no `alt` at all, which can make a screen reader read the file name out loud.
+
+```html
+<img class="card-image" src="./images/illustration-article.svg" alt="">
+```
+
 ### AI Collaboration
 
 This is a project where I act as the Product Engineer, not the developer. I define the requirements and validate every decision, and Claude Code writes the code.
