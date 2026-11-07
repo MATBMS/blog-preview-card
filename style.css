@@ -1,0 +1,49 @@
+/* ========== RESET ========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== FONTS ========== */
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./fonts/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./fonts/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========== CUSTOM PROPERTIES ========== */
+
+:root {
+  /* Colors */
+  --color-gray-950: #111111;
+  --color-gray-500: #6b6b6b;
+  --color-yellow: #f4d04e;
+  --color-white: #ffffff;
+
+  /* Font family */
+  --font-family: "Figtree", sans-serif;
+
+  /* Font sizes */
+  --font-size-preset-1: 1.5rem; /* 24px */
+  --font-size-preset-2: 1rem; /* 16px */
+  --font-size-preset-3: 0.875rem; /* 14px */
+
+  /* Spacing */
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1.5rem; /* 24px */
+}
